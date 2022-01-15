@@ -3,3 +3,44 @@
     margin:0;
     box-sizing: border-box;
 }
+h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.main{
+    margin:0px 50px 0 50px;
+}
+.page-layout{
+    padding: 50px;
+}
+.coverp-title{
+    text-align: center;
+    color:#1d78e2;
+}
+.group-name{
+    text-align: center;
+    color:#c94536;
+}
+.cover-footer{
+    text-align: center;
+    font-weight: 600;
+}
+table{
+    margin: 40px 0px 40px 0px;
+}
+table, th, td {
+    border: 2px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+  }
+th, td {
+  padding: 15px;
+}
+.tp{
+    padding-top: 10px;
+}
+.toc-title{
+    font-family: Comic Sans MS;
+    text-align: center;
+}
