@@ -7,6 +7,15 @@
     <script src="https://kit.fontawesome.com/a063a990c5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Spidermen_Website</title>
+    <script type="text/javascript">
+        function showDate() {
+          var d = new Date();
+          var curr_date = d.getDate();
+          var curr_month = d.getMonth() + 1; //months are zero based
+          var curr_year = d.getFullYear();
+          document.write(curr_date + "-" + curr_month + "-" + curr_year);
+        }
+      </script>
 </head>
 <body>
     <div class="main">
@@ -54,6 +63,7 @@
             <h3>Team name:</h3>
             <p>-Spidermen</p>
             <h3>Personal Information</h3>
+            <span id="dots">...</span><span id="more">
             <p><i>Le Phuc Thinh - S3893964:</i></p>
             <p style="margin: 5px 0px 10px 5px"> My name is Thinh, I was born in Ho Chi Minh city. I am a big foodie and my passion in IT came to me during college when my friend suggested it to me. I attend RMIT because I think this school will provide me with a good learning experience. My experience in IT includes knowledge about basic python programming, user centered design and SQL database.</p>
             <p><i>Dang Hoang Tuan - S3891494:</i></p>
@@ -64,6 +74,8 @@
                 </p>
             <p><i>Ho Tran Minh Khoi-s3877653:</i></p>
             <p style="margin: 5px 0px 10px 5px">My name is Khoi, I come from My Tho city which is not very far from Ho Chi Minh city, I’m a very simple person who loves playing video games and watching anime all day. I have also been going to the gym regularly recently to build some muscle. I have a passion for making video games and hope that I can take a game programming course in the future. I have some experience in coding web (html and css) but I am not proficient in it yet, I also have basic knowledge about Python and Java language. I’m very happy to be part of the spidermen Team.</p>
+            </span>
+            <button onclick="myFunction()" id="myBtn">Show more</button>
         </div>
         <div class="tools">
             <h3>Tools:</h3>
@@ -96,5 +108,23 @@
         <div class="skill-and-job"></div>
         <div class="group-reflection"></div>
     </div>
+    <script type="text/javascript">showDate();</script>
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Show more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Show less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
 </body>
 </html>
